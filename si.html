@@ -1,0 +1,18 @@
+<label for="numeros">Seleccionar el año:</label>
+    <select id="numeros">
+    </select>
+
+    <script>
+        const selectNumeros = document.getElementById('numeros');
+        
+        
+        for (let i = 1905; i <= 2024; i++) {
+            
+            let opcion = document.createElement('option');
+            opcion.value = i;  
+            opcion.text = 'Año ' + i;
+            
+            
+            selectNumeros.appendChild(opcion);
+        }
+    </script>
